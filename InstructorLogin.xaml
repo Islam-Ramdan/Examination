@@ -1,0 +1,20 @@
+﻿<Window x:Class="ExaminationSystem.InstructorLogin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExaminationSystem"
+        mc:Ignorable="d"
+       
+        Title="InstructorLogin" Height="450" Width="800">
+    <Grid>
+        <Label Content="Instructor" HorizontalAlignment="Left" Margin="301,32,0,325" Width="210" FontWeight="Bold" FontSize="36" FontFamily="Lucida Sans" Background="{x:Null}" BorderThickness="2" Foreground="#FF1754B0"/>
+        <Label Content="ID:" HorizontalAlignment="Left" Height="48" Margin="221,145,0,0" VerticalAlignment="Top" Width="67" FontFamily="Constantia" FontWeight="Bold" FontSize="28" Foreground="#FF1754B0"/>
+        <Button Content="Login" Height="55" Margin="327,321,267,0" VerticalAlignment="Top" Click="Button_Click" FontFamily="Imprint MT Shadow" FontSize="30" FontWeight="Bold" OpacityMask="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}" Background="#FF1754B0" BorderThickness="2" BorderBrush="Black" Foreground="White"/>
+        <TextBox Name="idTxt" Height="59" Margin="284,151,227,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Imprint MT Shadow" FontSize="28" FontWeight="Bold" Foreground="#FF062656" BorderBrush="#FF1A51A5" BorderThickness="2" TextChanged="idTxt_TextChanged"/>
+        <Label Content="First name:" HorizontalAlignment="Left" Height="37" Margin="120,231,0,0" VerticalAlignment="Top" Width="160" FontFamily="Constantia" FontWeight="Bold" FontSize="28" Foreground="#FF1754B0"/>
+        <TextBox Name ="fnameTxt" Height="52" Margin="284,238,227,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Imprint MT Shadow" FontSize="28" FontWeight="Bold" Foreground="#FF062656" BorderBrush="#FF1A51A5" BorderThickness="2" TextChanged="TextBox_TextChanged"/>
+        <Button Content="Back" Margin="644,17,30,0" VerticalAlignment="Top" Height="36" Click="Button_Click_1"/>
+
+    </Grid>
+</Window>

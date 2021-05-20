@@ -1,0 +1,35 @@
+﻿<Window x:Class="ExaminationSystem.frm_Exam"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExaminationSystem"
+        mc:Ignorable="d"
+        Loaded="Window_Loaded"
+        Title="frm_Exam" Height="450" Width="800">
+    <Grid x:Name="grd_Exam">
+
+        <Button x:Name="btn_Submit" Content="Submit" HorizontalAlignment="Left" Margin="662,372,0,0" VerticalAlignment="Top" Width="96" Height="27" Click="btn_Submit_Click"/>
+        <Button x:Name="btn_Next" Content="❯" VerticalContentAlignment="Top" HorizontalContentAlignment="Center" HorizontalAlignment="Right" Margin="0,145,0.333,0" VerticalAlignment="Top" Width="75" Height="112" Background="Transparent" BorderThickness="0" FontSize="75" Click="btn_Next_Click" RenderTransformOrigin="4.151,0.44"/>
+        <Button x:Name="btn_Previous" Content="❮" VerticalContentAlignment="Top" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="0,145,0,0" VerticalAlignment="Top" Width="75" Height="112" Background="Transparent" BorderThickness="0" FontSize="75" Click="btn_Previous_Click"/>
+
+        <Label x:Name="lbl_QNum" Content="Question (1) out of (10)" HorizontalAlignment="Left" Margin="34,21,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbl_Timer" Content="Time - 00:00:00" HorizontalAlignment="Left" Margin="667,21,0,0" VerticalAlignment="Top"/>
+
+        <TextBlock x:Name="txb_Question" HorizontalAlignment="Left" Margin="75,65,0,0" TextWrapping="Wrap" TextAlignment="Justify" Text="Question description" VerticalAlignment="Top" Height="80" Width="628"/>
+
+        <RadioButton x:Name="rd_Choice1" Margin="75,165,0,0" VerticalAlignment="Top" Checked="rd_Choice1_Checked" Height="35" HorizontalAlignment="Left" Width="628">
+            <TextBlock x:Name="txb_Choice1" TextWrapping="Wrap" TextAlignment="Justify" Text="txb_Choice1"/>
+        </RadioButton>
+        <RadioButton x:Name="rd_Choice2" Margin="75,219,0,0" VerticalAlignment="Top" Checked="rd_Choice2_Checked" Height="35" HorizontalAlignment="Left" Width="628">
+            <TextBlock x:Name="txb_Choice2" TextWrapping="Wrap" TextAlignment="Justify" Text="txb_Choice2"/>
+        </RadioButton>
+        <RadioButton x:Name="rd_Choice3" Margin="75,270,0,0" VerticalAlignment="Top" Checked="rd_Choice3_Checked" Height="35" HorizontalAlignment="Left" Width="628">
+            <TextBlock x:Name="txb_Choice3" TextWrapping="Wrap" TextAlignment="Justify" Text="txb_Choice3"/>
+        </RadioButton>
+        <RadioButton x:Name="rd_Choice4" Margin="75,324,0,0" VerticalAlignment="Top" Checked="rd_Choice4_Checked" Height="35" HorizontalAlignment="Left" Width="628">
+            <TextBlock x:Name="txb_Choice4" TextWrapping="Wrap" TextAlignment="Justify" Text="txb_Choice4"/>
+        </RadioButton>
+
+    </Grid>
+</Window>

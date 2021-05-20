@@ -1,0 +1,98 @@
+﻿<Window x:Class="ExaminationSystem.StudentResults"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExaminationSystem"
+        mc:Ignorable="d"
+        Loaded="Window_Loaded"
+        Title="StudentResults" Height="450" Width="800">
+    <StackPanel>
+        <Button Content="Back" 
+                Height="38" 
+                Width="60"
+                VerticalAlignment="Top"
+                HorizontalAlignment="Right"
+                Margin="0,0,14,0" 
+                Click="Button_Click"/>
+        <TextBox Height="29" 
+                 Name="studentName"
+                 TextWrapping="Wrap" 
+                 Text="Welcome : " 
+                 Width="200"
+                 VerticalAlignment="Top"
+                 HorizontalAlignment="Left"
+                 Margin="0,-30,0,0"/>
+        <Label Content="Student Results"
+               VerticalAlignment="Center"
+               HorizontalAlignment="Right"
+              Margin="0,10,318,15"
+               FontSize="18"
+               FontWeight="Bold"
+               FontFamily="Georgia"/>
+        <Grid Margin="10 10 10 30">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0"
+                 >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="99*"/>
+                    <ColumnDefinition Width="99*"/>
+                    <ColumnDefinition Width="32*"/>
+                </Grid.ColumnDefinitions>
+                <Label
+                    Width="85"
+                    Height="30"
+                    FontSize="15"
+                    FontWeight="Bold"
+                    FontFamily="Georgia"
+                    HorizontalAlignment="Left"
+                    Margin="15,4,0,-4" 
+                    RenderTransformOrigin="0.3,3.077" 
+                    Grid.Column="0" Content="Subject :"/>
+                <ComboBox
+                    x:Name="std_result"
+                    FontSize="15"
+                    FontWeight="Bold"
+                    FontFamily="Georgia"
+                    DisplayMemberPath="crs_Name"
+                    SelectedValuePath="grade"
+                     MinWidth="200"
+                    Height="30"
+                     HorizontalAlignment="Left"
+                     VerticalAlignment="Center"  
+                     Margin="110,5,0,-6"
+                     Grid.ColumnSpan="2"
+                      />
+            </Grid>
+
+            <Button Grid.Column="1"
+                    FontSize="15"
+                    FontWeight="Bold"
+                    FontFamily="Georgia"
+                    Width="150"
+                    Click="courseIDandResults" Content="View"/>
+        </Grid>
+        <!-- <DataGrid x:Name="StudentGradeResults"/>-->
+        <DataGrid x:Name="StudentGradeResults" AutoGenerateColumns="False"
+                  Width="450"
+                  HorizontalAlignment="Center"
+                  Margin="20 10 20 10">
+            <DataGrid.Columns>
+
+                <DataGridTextColumn Header="Subject" 
+                                    Width="221"
+                                    
+                                    Binding="{Binding Subject}"/>
+
+                <DataGridTextColumn Header="Grade" 
+                                    Width="221" 
+                                    Binding="{Binding Grade}"/>
+
+            </DataGrid.Columns>
+
+        </DataGrid>
+    </StackPanel>
+</Window>

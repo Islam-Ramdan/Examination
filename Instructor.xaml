@@ -1,0 +1,28 @@
+﻿<Window x:Class="ExaminationSystem.Instructor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExaminationSystem"
+        mc:Ignorable="d"
+        Loaded="Window_Loaded"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button Name="btn_course_topics" Click="btn_course_topics_Click" Content="View Course Topics" Height="62" Margin="295,240,280,0" VerticalAlignment="Top" FontSize="20"/>
+        <Button Name="btn_courses" Content="View Courses" HorizontalAlignment="Left" Height="62" Margin="144,129,0,0" VerticalAlignment="Top" Width="217" FontSize="20" Click="Button_Click"/>
+        <Button Name="btn_add_exam" Content="Add Exam" HorizontalAlignment="Left" Height="62" Margin="432,129,0,0" VerticalAlignment="Top" Width="217" FontSize="20" Click="Button_Click_1"/>
+        <Button Content="Back" HorizontalAlignment="Left" Margin="668,10,0,0" VerticalAlignment="Top" Width="75" Height="34" Click="Button_Click_2"/>
+        <TextBox HorizontalAlignment="Left" 
+                 Height="34" 
+                 Margin="10,10,0,0" 
+                 TextWrapping="Wrap" 
+                 Text="Wlcome : " 
+                 VerticalAlignment="Top"
+                 Name="instructorName"
+                 Width="216"/>
+
+    </Grid>
+</Window>

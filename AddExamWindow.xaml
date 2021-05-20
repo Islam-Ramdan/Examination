@@ -1,0 +1,32 @@
+﻿<Window x:Class="ExaminationSystem.AddExamWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExaminationSystem"
+        mc:Ignorable="d"
+        Loaded="Window_Loaded"
+        Title="AddExamWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="Add Exam" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="339,24,0,0" FontSize="24" FontWeight="Bold"/>
+        <ComboBox Name="combox_crs" DisplayMemberPath="crs_name" 
+                  SelectedValuePath="crs_Id"
+                  HorizontalAlignment="Left" Margin="339,105,0,0" VerticalAlignment="Top" Width="190" Height="35"/>
+        <Label Content="Course:" HorizontalAlignment="Left" Height="38" Margin="103,105,0,0" VerticalAlignment="Top" Width="125" FontSize="18"/>
+        <Label Content="No. of MCQ:" HorizontalAlignment="Left" Height="38" Margin="103,161,0,0" VerticalAlignment="Top" Width="125" FontSize="18"/>
+        <Label Content="No. of T/F:" HorizontalAlignment="Left" Height="38" Margin="103,217,0,0" VerticalAlignment="Top" Width="125" FontSize="18"/>
+        <Label Content="Duration:" HorizontalAlignment="Left" Height="38" Margin="103,274,0,0" VerticalAlignment="Top" Width="125" FontSize="18"/>
+        <Button Name="btn_add_exam" Content="Add" HorizontalAlignment="Left" Height="51" Margin="614,334,0,0" VerticalAlignment="Top" Width="112" FontSize="20" FontWeight="Bold" Click="btn_add_exam_Click"/>
+        <TextBox Name="txtbox_mcq" HorizontalAlignment="Left" Height="38" Margin="339,161,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190"/>
+        <TextBox Name="txtbox_tf" HorizontalAlignment="Left" Height="38" Margin="339,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190"/>
+        <TextBox Name="txtbox_duration" HorizontalAlignment="Left" Height="38" Margin="339,274,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190"/>
+        <Button Content="Back" VerticalAlignment="Top" Margin="693,10,24,0" Click="Button_Click"/>
+        <TextBox Height="23" 
+                 Margin="10,11,662,0" 
+                 TextWrapping="Wrap"
+                 x:Name="insName"
+                 Text="Welcoe : " 
+                 VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

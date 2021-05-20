@@ -1,0 +1,29 @@
+﻿<Window x:Class="ExaminationSystem.ViewCoursesWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExaminationSystem"
+        mc:Ignorable="d"
+        Loaded="Window_Loaded"
+        Title="ViewCoursesWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="0"/>
+            <ColumnDefinition Width="8*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="My Courses" Height="57" Margin="110.2,27,0,0" VerticalAlignment="Top" Width="327" FontSize="24" HorizontalAlignment="Left" FontWeight="Bold" Grid.Column="2"/>
+        <DataGrid Name="Ins_Crs_Grid" HorizontalAlignment="Left" Height="234" Margin="173,107,0,0" VerticalAlignment="Top" Width="481" Grid.ColumnSpan="3"/>
+        <Button Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Grid.Column="2" Margin="442,12,0,0" Click="Button_Click"/>
+        <TextBox HorizontalAlignment="Left" 
+                 Height="23" 
+                 Margin="10,9,0,0" 
+                 TextWrapping="Wrap" 
+                 Text="Welcome : " 
+                 VerticalAlignment="Top"
+                 Name="instructorName"
+                 Width="176"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,16 @@
+﻿<Window x:Class="ExaminationSystem.frm_Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExaminationSystem"
+        mc:Ignorable="d"
+        Loaded="Window_Loaded"
+        Title="frm_Login" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="Instructor" Content="Instructor" HorizontalAlignment="Center" Height="54" VerticalAlignment="Center" Width="302" Background="#FF1754B0" FontFamily="Imprint MT Shadow" FontSize="36" FontWeight="Bold" Click="Instructor_Click" Foreground="#FFFDFDFD" BorderBrush="{DynamicResource {x:Static SystemColors.ActiveCaptionTextBrushKey}}" BorderThickness="2"/>
+        <Button x:Name="Student" Content="Student" HorizontalAlignment="Center" Height="54" Margin="0 200 0 0" VerticalAlignment="Center" Width="302" Background="#FF1754B0" BorderBrush="{DynamicResource {x:Static SystemColors.ActiveCaptionTextBrushKey}}" FontFamily="Imprint MT Shadow" FontSize="36" FontWeight="Bold" Click="Student_Click" Foreground="White" BorderThickness="2"/>
+        <Label Content="Select user type" HorizontalAlignment="Left" Height="62" Margin="273,52,0,0" VerticalAlignment="Top" Width="308" FontWeight="Bold" FontSize="36" FontFamily="Lucida Sans" Background="{x:Null}" BorderThickness="2" Foreground="#FF1754B0"/>
+
+    </Grid>
+</Window>
